@@ -22,7 +22,7 @@ Big-O gösterimini yazınız.
 
 6. Aşama --------- [2,6,16,18,22,27]
 ```
-**İşlem 6 aşamada gerçekleşmektedir buda n kadar işlemdir bu sebeple Big-O gösterimi O(n)'dir**
+**İşlem 6 aşamada gerçekleşmektedir ve her aşamada n-1 işlem yapılmaktadır buda n.(n-1) işlem olduğunu gösterir n^2-n işlemle sonuçlanır. Bu sebeple Big-O gösterimi O(n^2)'dir**
 
 ***
 Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
