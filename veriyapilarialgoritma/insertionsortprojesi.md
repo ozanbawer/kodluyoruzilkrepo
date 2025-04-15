@@ -63,7 +63,3 @@ _Best case: Aradığımız sayının dizinin en başında olması_
 8. Aşama --------- [2,3,4,5,6,7,8,9,15]
 
 ```
-<<<<<<< HEAD
-
-=======
->>>>>>> 71045da1e7ba58ed84a83b41ee9ae507ad865ee6
