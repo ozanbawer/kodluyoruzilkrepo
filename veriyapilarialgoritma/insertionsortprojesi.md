@@ -7,7 +7,7 @@ Big-O gösterimini yazınız.
 
 ***
 
-##Insertion Sort Aşamaları
+## Insertion Sort Aşamaları
 
 ```
 1. Aşama --------- [22,27,16,2,18,6]
