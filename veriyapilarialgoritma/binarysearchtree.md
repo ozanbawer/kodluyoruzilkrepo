@@ -32,4 +32,3 @@ root : 5
 ``` 
 
 ![Binary Search Tree](https://github.com/ozanbawer/kodluyoruzilkrepo/blob/master/images/BinarySearchTree.png)
-
