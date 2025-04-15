@@ -1,9 +1,7 @@
-#Insertion Sort Projesi - Proje 1
+# Insertion Sort Projesi - Proje 1
 
 ***
-[22,27,16,2,18,6] -> Insertion Sort
-
-Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+[22,27,16,2,18,6] -> Insertion Sort > verilen dizinin sort türüne göre aşamalarını yazınız.
 
 Big-O gösterimini yazınız.
 
@@ -23,11 +21,8 @@ Big-O gösterimini yazınız.
 5. Aşama --------- [2,6,16,18,22,27]
 
 6. Aşama --------- [2,6,16,18,22,27]
-
-*6 aşama olduğu için Big O gösterimi O(n)'dir*
-
 ```
-
+**İşlem 6 aşamada gerçekleşmektedir buda n kadar işlemdir bu sebeple Big-O gösterimi O(n)'dir**
 
 ***
 Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
@@ -40,10 +35,13 @@ _Best case: Aradığımız sayının dizinin en başında olması_
 `18 sayısı dizi içinde ortada olduğu için Average case kapsamına girer`
 
 ***
-[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 aşamasını yazınız.
 ***
 
 ```
+
+--ilk 4 aşama
+
 1. Aşama --------- [7,3,5,8,2,9,4,15,6]
 
 2. Aşama --------- [2,3,5,8,7,9,4,15,6]
