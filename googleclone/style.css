@@ -1,0 +1,120 @@
+
+
+* {
+  margin: 0;
+  padding: 0;                       /* Sıfırlama kodları */
+  box-sizing: border-box;
+  
+}
+
+body {          /* body etiketindeki elementler düzenli olması için */
+  display: block;                   
+  margin: 8px;
+}
+
+.images {       /* google logosunu ortalamak için */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.container {   /* bütün içerikleri dengeli yerleştirmek için */
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.contain {  /* arama kutusu ve butonları ortalamak ve özelliştirmek için */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(239, 238, 238);
+  padding: 3px;
+}
+
+.contain .search {
+    font-weight: 400; /* slogandaki harfleri kalınlaştırmak için */
+}
+
+.contain .input {
+  width: 300px;     /* input kutusuna yükseklik ve genişlik ayarlansı */
+  height: 1.3rem;
+}
+
+.contain .btn {        /* buton içlarıne boşluk ekleme */
+    padding: 0rem 0.5rem;
+}
+
+
+ /* 2. kısımla ilgili hizalama ve renklendirmeler */
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links .sprecial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 43%;
+    height: 75px;
+    background-color: #7EE5DA;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+.links .second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 23%;
+    height: 75px;
+    background-color: #70CCC2;
+    margin-right: 3px;
+    margin-top: 3px;
+    font-size: 0.8rem;
+}
+
+.links .last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 75px;
+    background-color: #62B3AA;
+    margin-top: 3px;
+    font-size: 0.8rem;
+}
+.links .subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.links .subscribe .btn{
+    margin-right: 1rem;
+    padding: 0.1rem 0.3rem;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
