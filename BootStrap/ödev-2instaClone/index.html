@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fafafa;
+      font-family: 'Arial', sans-serif;
+    }
+    .navbar {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand img {
+      width: 100px;
+    }
+    .story {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid #c13584;
+      object-fit: cover;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+    }
+    .story:hover {
+      transform: scale(1.1);
+    }
+    .post-img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .card-header img {
+      width: 40px;
+      height: 40px;
+    }
+    .btn-primary-custom {
+      background-color: #0095f6;
+      border-color: #0095f6;
+    }
+    .btn-primary-custom:hover {
+      background-color: #007bb5;
+      border-color: #007bb5;
+    }
+    .like-btn {
+      transition: transform 0.3s ease;
+    }
+    .like-btn:hover {
+      transform: scale(1.1);
+    }
+    .sticky {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background-color: white;
+    }
+    .suggestion-button {
+      border: none;
+      background-color: transparent;
+      color: #0095f6;
+    }
+    .suggestion-button:hover {
+      text-decoration: underline;
+    }
+    .comment-section input {
+      width: 80%;
+      border: none;
+      padding: 8px;
+      border-radius: 20px;
+      margin-right: 10px;
+      background-color: #f0f0f0;
+    }
+    .comment-section button {
+      background-color: #0095f6;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-light bg-white sticky">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Instagram_logo.svg" height="30" alt="Instagram">
+    </a>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <div>
+      <a href="#" class="me-3"><i class="fas fa-home"></i></a>
+      <a href="#"><i class="fas fa-paper-plane"></i></a>
+      <a href="#"><i class="fas fa-compass"></i></a>
+      <a href="#"><i class="fas fa-heart"></i></a>
+      <a href="#"><i class="fas fa-user-circle"></i></a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-md-8">
+      
+      <!-- Stories -->
+      <div class="d-flex mb-4 overflow-auto">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="story">
+        <img src="https://randomuser.me/api/portraits/women/2.jpg" class="story">
+        <img src="https://randomuser.me/api/portraits/men/3.jpg" class="story">
+        <img src="https://randomuser.me/api/portraits/women/4.jpg" class="story">
+        <img src="https://randomuser.me/api/portraits/men/5.jpg" class="story">
+        <img src="https://randomuser.me/api/portraits/women/6.jpg" class="story">
+        <img src="https://randomuser.me/api/portraits/men/7.jpg" class="story">
+      </div>
+
+      <!-- Post 1 -->
+      <div class="card mb-4">
+        <div class="card-header d-flex align-items-center">
+          <img src="https://randomuser.me/api/portraits/men/1.jpg" class="rounded-circle me-2" width="40" height="40">
+          <strong>User1</strong>
+        </div>
+        <img src="https://source.unsplash.com/random/600x400" class="post-img" alt="Post">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <button class="btn like-btn"><i class="fas fa-heart"></i></button>
+              <button class="btn"><i class="fas fa-comment"></i></button>
+              <button class="btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <button class="btn"><i class="fas fa-bookmark"></i></button>
+          </div>
+          <p><strong>User1</strong> Beautiful view! 🌄 #nature</p>
+          <p class="text-muted small">2 hours ago</p>
+          
+          <!-- Comments -->
+          <div class="mb-3">
+            <strong>User2</strong> Great post! <br>
+            <strong>User3</strong> Stunning! 
+          </div>
+
+          <div class="comment-section d-flex">
+            <input type="text" placeholder="Add a comment...">
+            <button class="btn">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="card mb-4">
+        <div class="card-header d-flex align-items-center">
+          <img src="https://randomuser.me/api/portraits/women/2.jpg" class="rounded-circle me-2" width="40" height="40">
+          <strong>User2</strong>
+        </div>
+        <img src="https://source.unsplash.com/random/600x401" class="post-img" alt="Post">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <button class="btn like-btn"><i class="fas fa-heart"></i></button>
+              <button class="btn"><i class="fas fa-comment"></i></button>
+              <button class="btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <button class="btn"><i class="fas fa-bookmark"></i></button>
+          </div>
+          <p><strong>User2</strong> Loving the vibes here ✨</p>
+          <p class="text-muted small">5 hours ago</p>
+          
+          <!-- Comments -->
+          <div class="mb-3">
+            <strong>User4</strong> So cool! <br>
+            <strong>User5</strong> Inspiring!
+          </div>
+
+          <div class="comment-section d-flex">
+            <input type="text" placeholder="Add a comment...">
+            <button class="btn">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="card mb-4">
+        <div class="card-header d-flex align-items-center">
+          <img src="https://randomuser.me/api/portraits/men/3.jpg" class="rounded-circle me-2" width="40" height="40">
+          <strong>User3</strong>
+        </div>
+        <img src="https://source.unsplash.com/random/600x402" class="post-img" alt="Post">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <button class="btn like-btn"><i class="fas fa-heart"></i></button>
+              <button class="btn"><i class="fas fa-comment"></i></button>
+              <button class="btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <button class="btn"><i class="fas fa-bookmark"></i></button>
+          </div>
+          <p><strong>User3</strong> Just another beautiful day! 🌞</p>
+          <p class="text-muted small">1 day ago</p>
+          
+          <!-- Comments -->
+          <div class="mb-3">
+            <strong>User6</strong> Amazing! <br>
+            <strong>User7</strong> Love this pic!
+          </div>
+
+          <div class="comment-section d-flex">
+            <input type="text" placeholder="Add a comment...">
+            <button class="btn">Post</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-md-4 d-none d-md-block">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Suggestions for you</h5>
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://randomuser.me/api/portraits/men/10.jpg" class="rounded-circle me-2" width="40" height="40">
+            <div>
+              <strong>User10</strong><br>
+              <small class="text-muted">Followed by User1</small>
+            </div>
+            <button class="suggestion-button ms-auto">Follow</button>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle me-2" width="40" height="40">
+            <div>
+              <strong>User11</strong><br>
+              <small class="text-muted">New on Instagram</small>
+            </div>
+            <button class="suggestion-button ms-auto">Follow</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
